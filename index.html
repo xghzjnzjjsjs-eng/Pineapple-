@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Pineapple ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#fff8f0,#ffe9e3);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#333;
+    padding:20px;
+}
+
+.container{
+    max-width:750px;
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    text-align:center;
+    animation:fadeIn 1.2s ease;
+}
+
+h1{
+    color:#ff7b54;
+    margin-bottom:25px;
+    font-size:3rem;
+}
+
+.heart{
+    font-size:50px;
+    animation:beat 1s infinite;
+    margin-bottom:15px;
+}
+
+.message{
+    background:#fff5f2;
+    padding:30px;
+    border-radius:20px;
+    line-height:1.9;
+    font-size:1.1rem;
+    color:#555;
+}
+
+.message p{
+    margin-bottom:20px;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff7b54;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff6135;
+    transform:scale(1.05);
+}
+
+.hidden{
+    display:none;
+    margin-top:25px;
+    font-size:1.2rem;
+    color:#ff6135;
+    font-weight:600;
+    animation:fadeIn 1s ease;
+}
+
+@keyframes beat{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="heart">❤️</div>
+
+    <h1>Pineapple 🍍❤️</h1>
+
+    <div class="message">
+
+        <p>
+            Pai haa tuka haven ninad cho voice send kela manu khup sorry hav tuka sangpak aslo but madit maka sanqhalim vaipache padle ani visarlo (tuka distale hav kide bi reason dita avoid karpak but tashe na hav majhi chuk accept karta).
+        </p>
+
+        <p>
+            Aaiz majo dis khup paad gele ani tu majha khatir hurt zale manu maka khuput matlya khuput vait disla 😭
+        </p>
+
+        <p>
+            Haven trust break kelo aaikon maka khuput vait disle but please just ekut da forgive kar ani kennat karcho please 🥺
+        </p>
+
+    </div>
+
+    <button onclick="showMessage()">One More Thing...</button>
+
+    <div class="hidden" id="extra">
+        Kharet sorry haa ani kennet karchona, chukon suddha ashe karchona please 🥺 ❤️
+    </div>
+
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("extra").style.display = "block";
+}
+</script>
+
+</body>
+</html>
